@@ -59,13 +59,20 @@ class Book
     public void printPages(){
         System.out.println("Pages: " + pages);
     }    
+    // 88
+    public void printRefNumber(){
+        String tmpRefNumber = refNumber.length() > 0 ? refNumber : "ZZZ";
+        System.out.println("Ref Number: " + tmpRefNumber);
+    }
+    // 88
     public void printDetails(){
         System.out.println("#############################");
         printAuthor();
         printTitle();
         printPages();
+        printRefNumber();
         System.out.println("#############################");
-    }    
+    }
    
 }
 
