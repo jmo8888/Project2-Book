@@ -13,17 +13,20 @@ class Book
     private String title;
     // 85
     private int pages;
+    // 87
+    private String refNumber;
 
     /**
      * Set the author and title fields when this object
      * is constructed.
      */
-    // 85
+    // 85 & 87
     public Book(String bookAuthor, String bookTitle, int bookPages)
     {
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages;
+        refNumber = "";
     }
 
     // 83
@@ -36,6 +39,14 @@ class Book
     // 85
     public int getPages(){
         return pages;
+    }
+    // 87
+    public String getRefNumber(){
+        return refNumber;
+    }
+    // 87 
+    public void setRefNumber(String bookRefNumber){
+        refNumber = bookRefNumber;
     }
     // 84
     public void printAuthor(){
@@ -54,8 +65,7 @@ class Book
         printTitle();
         printPages();
         System.out.println("#############################");
-    }
-    
+    }    
    
 }
 
