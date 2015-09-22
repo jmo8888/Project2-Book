@@ -43,7 +43,19 @@ class Book
     }
     public void printTitle(){
         System.out.println("Title: " + title);
-    }  
+    }
+    // 86
+    public void printPages(){
+        System.out.println("Pages: " + pages);
+    }    
+    public void printDetails(){
+        System.out.println("#############################");
+        printAuthor();
+        printTitle();
+        printPages();
+        System.out.println("#############################");
+    }
     
+   
 }
 
