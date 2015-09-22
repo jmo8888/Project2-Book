@@ -44,9 +44,14 @@ class Book
     public String getRefNumber(){
         return refNumber;
     }
-    // 87 
+    // 87 & 89
     public void setRefNumber(String bookRefNumber){
-        refNumber = bookRefNumber;
+        if (bookRefNumber.length() >= 3){
+            refNumber = bookRefNumber;
+        }
+        else {
+            System.out.println("Error - Reference Number must be at least 3 characters");
+        }
     }
     // 84
     public void printAuthor(){
